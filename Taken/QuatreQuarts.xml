@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<quatrequarts>
+<taart naam="QuatreQuarts">
     <ingredienten>
         <ingredient hoeveelheid="200">suiker</ingredient>
         <ingredient hoeveelheid="200">boter</ingredient>
@@ -20,4 +20,4 @@
             met sinaasappel- of citroenschil, stukjes chocolade of pure cacao, stukjes appel of peer
             (met kaneel), stukjes abrikoos of perzik, gekonfijt fruit, rozijnen, enzovoort.</instructie>
     </bereiding>
-</quatrequarts>
+</taart>
