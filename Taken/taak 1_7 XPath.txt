@@ -1,0 +1,6 @@
+1) //@voornaam
+2) //lid[@geslacht="V"]/@voornaam
+3) //lid[@voornaam="Benny" and @familienaam="Andersson"]/taken/taak[last()]
+4) //geboortejaar[text()=1945]/../@voornaam
+5) //taak[text()="zang"]/../../@voornaam
+6) //taken[count(taak) > 1]/../@voornaam
