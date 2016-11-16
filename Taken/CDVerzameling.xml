@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <verzameling>
-    <cd>
-        <artiest>Deafheaven</artiest>
-        <titel>New Bermuda</titel>
-        <jaar>2015</jaar>
-    </cd>
-    <cd>
-        <artiest>Deafheaven</artiest>
-        <titel>New Bermuda</titel>
-        <jaar>2015</jaar>
-    </cd>
-    <cd>
-        <artiest>Deafheaven</artiest>
-        <titel>New Bermuda</titel>
-        <jaar>2015</jaar>
-    </cd>
+    <cd arties="Deafheaven" titel="New Bermuda" jaar="2015" />
+    <cd arties="Miles Davis" titel="Some Kind Of Blue" jaar="1980" />
+    <cd arties="Queens Of The Stone Age" titel="Songs For The Deaf" jaar="1995" />
 </verzameling>
