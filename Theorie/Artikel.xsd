@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema">
-    <element name="artikel"/>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:vdab="http://www.vdab.be/artikels" targetNamespace="http://www.vdab.be/artikels">
+    <complexType name="Artikel">
+        <attribute name="productieDatum" use="required" type="date"/>
+        <attribute name="prijs" use="required" type="decimal"/>
+        <attribute name="lengte" type="decimal"/>
+        <attribute name="breedte" type="decimal"/>
+        <attribute name="hoogte" type="decimal"/>
+    </complexType>
+    <element name="artikel" type="vdab:Artikel"/>
 </schema>

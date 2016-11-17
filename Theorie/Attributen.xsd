@@ -3,10 +3,10 @@
     <complexType name="Persoon">
         <attribute name="voornaam" use="required"/>
         <attribute name="familienaam" use="required" />
-        <attribute name="aantalKinderen"/>
-        <attribute name="geboorteDatum"/>
-        <attribute name="wedde"/>
-        <attribute name="gehuwd"/>            
+        <attribute name="aantalKinderen" type="nonNegativeInteger"/>
+        <attribute name="geboorteDatum" type="date"/>
+        <attribute name="wedde" type="decimal"/>
+        <attribute name="gehuwd" type="boolean"/>
     </complexType>
     <element name="persoon" type="vdab:Persoon"/>
 </schema>
