@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<artikel xmlns="http://www.vdab.be/artikels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vdab.be/artikels Artikel.xsd" productieDatum="2016-01-01" prijs="45.32"/>
+<artikel xmlns="http://www.vdab.be/artikels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vdab.be/artikels Artikel.xsd">
+    <productieDatum>2016-01-01</productieDatum>
+    <prijs>5.2</prijs>
+</artikel>

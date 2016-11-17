@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:vdab="http://www.vdab.be/artikels" targetNamespace="http://www.vdab.be/artikels">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:vdab="http://www.vdab.be/artikels" targetNamespace="http://www.vdab.be/artikels" elementFormDefault="qualified">
     <simpleType name="ProductieDatum">
         <restriction base="date">
             <minInclusive value="2000-01-01"/>
@@ -17,11 +17,13 @@
         </restriction>
     </simpleType>
     <complexType name="Artikel">
-        <attribute name="productieDatum" use="required" type="vdab:ProductieDatum"/>
-        <attribute name="prijs" use="required" type="vdab:Prijs"/>
-        <attribute name="lengte" type="vdab:Afstand"/>
-        <attribute name="breedte" type="vdab:Afstand"/>
-        <attribute name="hoogte" type="vdab:Afstand"/>
+        <all>
+            <element name="productieDatum" type="vdab:ProductieDatum" minOccurs="1" />
+            <element name="prijs" type="vdab:Prijs" minOccurs="1" />
+            <element name="lengte" type="vdab:Afstand" minOccurs="0"/>
+            <element name="breedte" type="vdab:Afstand" minOccurs="0"/>
+            <element name="hoogte" type="vdab:Afstand" minOccurs="0"/>
+        </all>
     </complexType>
     <element name="artikel" type="vdab:Artikel"/>
 </schema>
