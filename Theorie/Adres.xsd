@@ -8,12 +8,12 @@
 		</restriction>
 	</simpleType>
 	<complexType name="Adres">
-            <sequence>
+            <all>
                 <element name="straat"/>
                 <element name="huisnummer"/>
                 <element name="postcode" type="vdab:Postcode"/>
                 <element name="gemeente"/>                    
-            </sequence>
+            </all>
 	</complexType>
 	<element name="adres" type="vdab:Adres" />
 </schema>

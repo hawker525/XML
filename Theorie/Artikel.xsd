@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:vdab="http://www.vdab.be/artikels" targetNamespace="http://www.vdab.be/artikels">
+    <simpleType name="ProductieDatum">
+        <restriction base="date">
+            <minInclusive value="2000-01-01"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="Prijs">
+        <restriction base="decimal">
+            <minExclusive value="0"/>
+            <fractionDigits value="2"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="Afstand">
+        <restriction base="decimal">
+            <minExclusive value="0"/>
+        </restriction>
+    </simpleType>
     <complexType name="Artikel">
-        <attribute name="productieDatum" use="required" type="date"/>
-        <attribute name="prijs" use="required" type="decimal"/>
-        <attribute name="lengte" type="decimal"/>
-        <attribute name="breedte" type="decimal"/>
-        <attribute name="hoogte" type="decimal"/>
+        <attribute name="productieDatum" use="required" type="vdab:ProductieDatum"/>
+        <attribute name="prijs" use="required" type="vdab:Prijs"/>
+        <attribute name="lengte" type="vdab:Afstand"/>
+        <attribute name="breedte" type="vdab:Afstand"/>
+        <attribute name="hoogte" type="vdab:Afstand"/>
     </complexType>
     <element name="artikel" type="vdab:Artikel"/>
 </schema>
