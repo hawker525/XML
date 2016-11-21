@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<bierendb>
+<bierendb xmlns="http://www.vdab.be/bierendb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.vdab.be/bierendb Bieren.xsd">
   <bieren>
     <bier biernr="4">
       <naam>A.C.O.</naam>
