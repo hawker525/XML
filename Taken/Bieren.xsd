@@ -76,8 +76,8 @@
         <field xpath="@soortnr" />
     </key>
     <keyref name="brouwernrKeyref" refer="vdab:brouwerKey">
-        <selector xpath="vdab:bieren/vdab:bier/vdab:brouwernr"/>
-        <field xpath="."/>
+        <selector xpath="vdab:bieren/vdab:bier"/>
+        <field xpath="vdab:brouwernr"/>
     </keyref>
     <keyref name="soortKeyref" refer="vdab:soortKey">
         <selector xpath="vdab:bieren/vdab:bier/vdab:soortnr"/>
